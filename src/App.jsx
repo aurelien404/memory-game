@@ -1,13 +1,10 @@
-import { useTranslation } from "react-i18next";
+import MemoryGame from "./projects/MemoryGame";
 
 function App() {
-  const { t } = useTranslation();
-
   return (
-    <>
-      <h1>{t("hero.title")}</h1>
-      <p>{t("hero.subtitle")}</p>
-    </>
+    <div className="App">
+      <MemoryGame />
+    </div>
   );
 }
 
