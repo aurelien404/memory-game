@@ -29,7 +29,7 @@ Test your memory and concentration by matching pairs of cards. Whether you're ju
 To clone and run this project locally:
 
 ```bash
-git clone https://github.com/aurelien404/aurelienj.ch.git
+git clone https://github.com/aurelien404/memory-game.git
 cd memory-game
 npm install
 npm run dev
