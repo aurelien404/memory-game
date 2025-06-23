@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 const memoryItems = [
   { id: 1, value: "🍑" },
@@ -46,6 +48,9 @@ export default function MemoryGame() {
   const [matched, setMatched] = useState([]);
   const [moves, setMoves] = useState(0);
   const [pairsCount, setPairsCount] = useState(8);
+
+  const styleBtn =
+    "text-emerald-500 font-bold hover:scale-150 active:scale-90 duration-250 ease-in";
 
   const initGame = (selectedLevel = level) => {
     let count;
@@ -131,13 +136,15 @@ export default function MemoryGame() {
           <h1 className="text-2xl md:text-4xl text-white font-extrabold text-center">
             Memory game.
           </h1>
-          <p className="text-md text-white">
-            Created by{" "}
+          <p className="text-md text-white flex flex-row justify-center gap-6 p-6 text-3xl">
             <a
-              href="https://aurelienj.ch"
-              className="text-emerald-500 font-bold"
+              href="https://github.com/aurelien404/memory-game"
+              className={`${styleBtn}`}
             >
-              www.aurelienj.ch
+              <FaGithub />
+            </a>
+            <a href="https://aurelienj.ch" className={`${styleBtn}`}>
+              <TbWorld />
             </a>
           </p>
         </div>
