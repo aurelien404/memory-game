@@ -2,10 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
+  
+    <!-- SEO Meta -->
+    <meta name="description"
+      content="A fun and fast memory game created by aurelienj. Challenge your brain and compete with friends!">
+    <link rel="canonical" href="https://memory-game.aurelienj.ch" />
+  
+    <!-- Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Memory Game by aurelienj">
+    <meta property="og:description" content="Challenge your memory with this fun and fast-paced game.">
+    <meta property="og:url" content="https://memory-game.aurelienj.ch">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://memory-game.aurelienj.ch/preview.png" />
+  
+    <!-- Favicon & UI Colors -->
+    <link rel="icon" href="/icons.svg" sizes="32x32">
+    <link rel="icon" href="/icons.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icons.svg">
+  
+    <!-- Analytics -->
+    <script defer data-domain="memory-game.aurelienj.ch"
+      src="https://plausible.io/js/script.outbound-links.pageview-props.tagged-events.js"></script>
+    <script>
+      window.plausible = window.plausible || function () {
+        (window.plausible.q = window.plausible.q || []).push(arguments)
+      }
+    </script>
+  
+    <title>Memory Game by aurelienj</title>
+    </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
